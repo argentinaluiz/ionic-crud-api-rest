@@ -1,0 +1,28 @@
+<!--
+  Generated template for the ContactDeletePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Excluir {{contact.name}}?</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+        {{contact.title}}
+        </ion-card-title>
+      <p>
+        {{contact.email}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button color="danger" (click)="destroy()">Excluir</button>
+</ion-content>
